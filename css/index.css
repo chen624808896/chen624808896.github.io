@@ -29,39 +29,34 @@ body {
     font-size: 22px;
 }
 
-.search-div-right{
+.search-div-right {
     float: left;
     line-height: 34px;
 }
 
-
 /*搜索框*/
 .search-div {
-    /*border: 1px solid #0e90d2;*/
+
 }
 
-
 /*audio-div*/
-.audio-div{
+.audio-div {
     margin-top: 5px;
 }
 
 /*左边*/
 .audio-left-div {
-    height: 480px;
 }
 
 /*audio-body*/
 .audio-body-div {
-    height: 480px;
 }
 
 /*右边*/
 .audio-right-div {
-    height: 480px;
 }
 
-.foot-div{
+.foot-div {
     margin-top: 5px;
     text-align: center;
 }
