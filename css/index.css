@@ -15,22 +15,17 @@ body {
 
 /*title*/
 .title-div {
-
-}
-
-.title-div div {
     height: 50px;
     text-align: center;
 }
 
 .title-div div span {
     line-height: 50px;
-    color: #0e90d2;
+    color: #FF1493;
     font-size: 22px;
 }
 
 .search-div-right {
-    float: left;
     line-height: 34px;
 }
 
