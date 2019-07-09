@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃瓜Eat</title>
+    <link rel="icon" href="img/favicon.ico" type="images/x-ico"/>
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/APlayer/APlayer.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/download2.js"></script>
+    <script src="js/Meting.js"></script>
+    <script src="js/APlayer/APlayer.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row news-div">
+        <div class="col-md-12">
+            <marquee><img id="pmd_img"/>欢迎光临吃瓜Eat，本工具为抓取各大音乐平台的api数据，支持该平台下有<b>版权</b>音乐的试听、下载，仅供学习交流，勿作为商业用途！！！
+            </marquee>
+        </div>
+    </div>
+    <div class="row title-div">
+        <div class="col-md-12">
+            <span><img src="img/favicon.ico" alt="">&nbsp;吃瓜Eat <span
+                    style="font-size: 16px;color: black;">在线音乐</span></span>
+        </div>
+    </div>
+    <div class="row search-div">
+        <div class="col-md-2 col-md-offset-1 search-div-left">
+            <select id="apiType" class="form-control" style="width: 100%;">
+                <option value="kugou">酷狗音乐</option>
+                <option value="tencent">QQ音乐</option>
+                <option value="netease">网易云音乐</option>
+                <option value="xiami">虾米音乐</option>
+                <option value="baidu">百度音乐</option>
+            </select>
+        </div>
+        <div class="col-md-6 search-div-center">
+            <div class="input-group">
+                <input id="keyword" type="text" class="form-control" placeholder="请输入关键字...">
+                <span class="input-group-btn">
+                    <button class="btn btn-success searchBtn" type="button" onclick="goSearch()">
+                        <i class="glyphicon glyphicon-search" aria-hidden="true">搜索</i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-1 search-div-right">
+            <button class="btn btn-success btn-xs" type="button" onclick="downMp3()">
+                <i class="glyphicon glyphicon-cloud-download" aria-hidden="true">下载当前mp3</i>
+            </button>
+        </div>
+    </div>
+    <!--audio-->
+    <div class="row audio-div">
+        <!--left-->
+        <div class="col-md-1 audio-left-div">
+
+        </div>
+        <!--audio body-->
+        <div class="col-md-10 audio-body-div">
+
+        </div>
+        <!--right-->
+        <div class="col-lg-1 audio-right-div">
+
+        </div>
+    </div>
+
+    <!-- foot -->
+    <div class="row foot-div">
+        <div class="col-md-10 col-md-offset-1">
+            <p>&copy;2019 <a href="javascript:;">吃瓜Eat</a></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("#pmd_img").attr("src", "img/dog.gif?r=" + Math.random());
+    });
+</script>
+</html>

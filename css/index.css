@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bj.png);
+}
+
+/*公告*/
+.news-div {
+    height: 20px;
+    margin-top: 2px;
+}
+
+/*title*/
+.title-div {
+
+}
+
+.title-div div {
+    height: 50px;
+    text-align: center;
+}
+
+.title-div div span {
+    line-height: 50px;
+    color: #0e90d2;
+    font-size: 22px;
+}
+
+.search-div-right{
+    float: left;
+    line-height: 34px;
+}
+
+
+/*搜索框*/
+.search-div {
+    /*border: 1px solid #0e90d2;*/
+}
+
+
+/*audio-div*/
+.audio-div{
+    margin-top: 5px;
+}
+
+/*左边*/
+.audio-left-div {
+    height: 480px;
+}
+
+/*audio-body*/
+.audio-body-div {
+    height: 480px;
+}
+
+/*右边*/
+.audio-right-div {
+    height: 480px;
+}
+
+.foot-div{
+    margin-top: 5px;
+    text-align: center;
+}
