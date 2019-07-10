@@ -6,8 +6,10 @@
     <link rel="icon" href="img/favicon.ico" type="images/x-ico"/>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="js/APlayer/APlayer.min.css">
+    <link rel="stylesheet" href="js/backtop/floating.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/backtop/floating.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/layer/layer.js"></script>
     <script src="js/download2.js"></script>
@@ -83,11 +85,28 @@
     </div>
 
 </div>
-
 </body>
 <script type="text/javascript">
     $(function () {
         $("#pmd_img").attr("src", "img/dog.gif?r=" + Math.random());
     });
+</script>
+<script>
+    $(document).ready(function () {
+        $("body").floating({
+            "theme": "panel_theme_fillet_solid",
+            "state": true,
+            "moveState": true,
+            "size": "sm",
+            "position": "right-center",
+            "tip": {"background-color": "#000000", "color": "#ffffff"},
+            "account": [{
+                "type": "QRcode",
+                "tip": "https://geekhwx.github.io/img/qrcode.png",
+                "text": null,
+                "url": null
+            }, {"type": "Top", "tip": "返回顶部", "text": null, "url": null}]
+        });
+    })
 </script>
 </html>
