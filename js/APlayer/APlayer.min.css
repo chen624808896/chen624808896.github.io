@@ -504,8 +504,8 @@
 /*歌词*/
 .aplayer .aplayer-lrc p {
     font-size: 12px;
-    color: #0e90d2;
-    /*color: #FF1493;*/
+    /*color: #0e90d2;*/
+    color: #FF1493;
     line-height: 16px !important;
     height: 16px !important;
     padding: 0 !important;
