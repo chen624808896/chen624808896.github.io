@@ -312,11 +312,12 @@
     padding-bottom: 2px;
     height: 20px
 }
-
+/*歌名*/
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
-    font-size: 14px
+    font-size: 14px;
+    color: #0e90d2;
 }
-
+/*歌手*/
 .aplayer .aplayer-info .aplayer-music .aplayer-author {
     font-size: 12px;
     color: #666
@@ -333,19 +334,19 @@
     cursor: pointer !important;
     flex: 1
 }
-
+/*鼠标悬浮进度条后的css*/
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap:hover .aplayer-bar .aplayer-played .aplayer-thumb {
-    -webkit-transform: scale(1);
-    transform: scale(1)
+    -webkit-transform: scale(2);
+    transform: scale(2)
 }
-
+/*默认进度条的背景色css*/
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
     position: relative;
     height: 2px;
     width: 100%;
-    background: #cdcdcd
+    background: #cdcdcd;
 }
-
+/*进度缓存条的css*/
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
     position: absolute;
     left: 0;
@@ -363,7 +364,7 @@
     bottom: 0;
     height: 2px
 }
-
+/*在播放时的进度条css*/
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
     position: absolute;
     top: 0;
@@ -375,8 +376,8 @@
     border-radius: 50%;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    -webkit-transform: scale(0);
-    transform: scale(0)
+    -webkit-transform: scale(1);
+    transform: scale(1)
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time {
@@ -503,7 +504,7 @@
 
 /*歌词*/
 .aplayer .aplayer-lrc p {
-    font-size: 12px;
+    font-size: 14px;
     /*color: #0e90d2;*/
     color: #FF1493;
     line-height: 16px !important;
