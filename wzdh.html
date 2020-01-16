@@ -2,61 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>网站导航</title>
-    <link rel="icon" href="img/favicon.ico" type="images/x-ico"/>
-    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/backtop/floating.css">
-    <script src="js/jquery/jquery-3.1.0.min.js"></script>
-    <script src="js/backtop/floating.js"></script>
-    <script src="js/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/layer/layer.js"></script>
-    <script src="js/mouse.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-image: url(img/bj.png);
-        }
-
-        .ui {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>技术导航</title>
+    <link rel="shortcut icon" href="favcion.ico"/>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/wzdh.css">
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-
+<div class="container" id="container">
+    <aside class="left-bar" id="leftBar">
+        <div class="title">
+            <p>技术导航</p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="ui">
-                <li><a title="技术导航天下" href="https://www.daohangtx.com/" target="_blank">QQ技术导航</a></li>
-                <li><a title="小K娱乐网" href="https://www.kjsv.com/" target="_blank">小K娱乐网</a></li>
-                <li><a title="QQ我爱网" href="https://www.qqwaw.com/" target="_blank">QQ我爱网</a></li>
-                <li><a title="软件库" href="https://www.rjk6.com/" target="_blank">软件库网</a></li>
-                <li><a title="115资源网" href="https://www.115z.com/" target="_blank">115资源网</a></li>
-                <li><a title="好基友乐园" href="http://www.haojiyou.la/" target="_blank">好基友乐园</a></li>
-                <li><a title="小7娱乐网" href="http://www.xiaoqi0.com/" target="_blank">小7娱乐网</a></li>
-                <li><a title="蓝点资源网" href="http://www.qqwaixin.com/" target="_blank">蓝点资源网</a></li>
-                <li><a title="善恶资源网" href="https://www.404v.com" target="_blank">善恶资源网</a></li>
-                <li><a title="优悦娱乐网" href="http://www.qqyouyue.com/" target="_blank">优悦娱乐网</a></li>
-                <li><a title="LOL皮肤下载" href="http://www.cclolcc.com" target="_blank">LOL皮肤下载</a></li>
-                <li><a title="小高教学网" href="http://www.12580sky.com" target="_blank">小高教学网</a></li>
-                <li><a title="梅花辅助网" href="https://www.emh6.com/" target="_blank">梅花辅助网</a></li>
+        <nav class="nav">
+            <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>导航列表</a><i class="line"></i></div>
+            <ul class="nav-item" id="navItem">
+                <li><a href="#dh1" class="active"><i class="iconfont icon-shequ"></i>开发社区</a></li>
+                <li><a href="#dh2"><i class="iconfont icon-blogger"></i>技术博客</a></li>
+                <li><a href="#dh3"><i class="iconfont icon-xuexi1"></i>优惠福利</a></li>
             </ul>
-        </div>
-    </div>
+            <div class="item comment">
+                <a target="_blank" href="https://github.com/GeekHwx"><i class="iconfont icon-github"></i>爱码士很优秀</a>
+            </div>
+        </nav>
+    </aside>
+    <section class="main">
+        <div id="mainContent">
+            <!-- 手机端菜单 -->
+            <div id="menu"><a href="#">菜单</a></div>
 
+            <div class="box">
+                <a href="#" name="dh1"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-shequ"></i>开发社区</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://blog.csdn.net/qq_33280989">
+                        <div class="item">
+                            <div class="logo"><img src="img/csdn.ico">Geek胡百万博客</div>
+                            <div class="desc">日常开发技能分享</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" name="dh2"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-blogger"></i>技术博客</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.daohangtx.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">技术导航天下</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.kjsv.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">小K娱乐网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.qqwaw.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">QQ我爱网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.rjk6.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">软件库</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.115z.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">115资源网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.haojiyou.la">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">好基友乐园</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.xiaoqi0.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">小7娱乐网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.qqwaixin.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">蓝点资源网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.404v.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">善恶资源网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.qqyouyue.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">优悦娱乐网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.cclolcc.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">LOL皮肤下载</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.12580sky.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">小高教学网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.emh6.com">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">梅花辅助网</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://zhiyun.ppdsw.xyz/live">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">福利聚合直播</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://guozhivip.com/rank">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">果汁排行榜</span></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="xxxx">
+                        <div class="item">
+                            <div class="no-logo"><span class="logo">xxxxx</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" name="dh3"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-xuexi1"></i>优惠福利</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://yozk.cn">
+                        <div class="item">
+                            <div class="no-logo">建设中...</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="copyright">
+                <div>
+                    本站来自互联网资源搜集、请合理使用 &nbsp;<a target="_blank" href="https://github.com/GeekHwx">爱码士很优秀</a>
+                </div>
+            </div>
+        </footer>
+    </section>
 </div>
 </body>
+<script>
+    var oMenu = document.getElementById('menu');
+    var oBtn = oMenu.getElementsByTagName('a')[0];
+    var oLeftBar = document.getElementById('leftBar');
+    oBtn.onclick = function () {
+        if (oLeftBar.offsetLeft == 0) {
+            oLeftBar.style.left = -249 + 'px';
+        } else {
+            oLeftBar.style.left = 0 + 'px';
+        }
+        if (document.documentElement.clientWidth <= 481) {
+            document.onclick = function () {
+                if (oLeftBar.offsetLeft == 0) {
+                    console.log(123);
+                    oLeftBar.style.left = -249 + 'px';
+                }
+            }
+        }
+    }
+
+    var oNavItem = document.getElementById('navItem');
+    var aA = oNavItem.getElementsByTagName('a');
+    for (var i = 0; i < aA.length; i++) {
+        aA[i].onclick = function () {
+            for (var j = 0; j < aA.length; j++) {
+                aA[j].className = '';
+            }
+            this.className = 'active';
+        }
+    }
+</script>
 </html>
